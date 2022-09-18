@@ -83,3 +83,21 @@ It will look for __one or more matches__.
 #### Question Mark (?):
 
 It will match for __zero or one occurrences__. 
+
+
+## Counters {n,n}
+
+It is use to stablish how many times a character must appear. 
+
+`\d{2,7}` It will match a __set of digits from 2 up to 7 numbers together__. 
+
+`\d{4,}` It will match a __set of 4 or more digits together__.
+
+`\w{5,}` It iwll match a __set of characters (number/words) of 5 or more__.
+
+`\d{2,2}\-?\d{2,2}\-?\d{2,2}\-?` It will __match a set of 2 digits (3 times)__ together and __it migth or might not be followed by a "-"__. 
+- the "?" indicates that the "-" could be appear or not. 
+
+###### Creating a class with counters and escaped characters:
+
+`\d{2,2}[\-\.]?` __match a set of 2 digits__ (as many as the appear in the document), and they __could or could not be followed by a "-" or "."__.
