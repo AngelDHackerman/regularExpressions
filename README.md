@@ -15,7 +15,7 @@ Find __a set of 3 consecutive characters followed by a space__:
 `... `
 
 
-### Predefined and built classes
+## Predefined and built classes
 
 
 #### Digits (\d):
@@ -57,6 +57,8 @@ You can use it to look for ranges.
 `[a-fA-F0-5_\.]` It will look foor __lower case and UPPER case letters from A to F, the character "_" and the dot character "."__
 
 
+## Delimiters
+
 #### Asterisk (*):
 
 It is a __greedy__ selector, the __asterick will match zero or more__.
@@ -66,3 +68,18 @@ It is a __greedy__ selector, the __asterick will match zero or more__.
 
 `\d*` Look for __all the digits__ in the document.
 
+`\d*[a-z]` It will match if there is __zero or more digits followed by letter from a to z.__
+
+
+#### Plus (+):
+
+It will look for __one or more matches__.
+
+`\d+`  A digit that has __one or more digit beside it__.
+
+`\d+[a-z]` It will look for __one or more digits followed by the letters form a to z__. 
+
+
+#### Question Mark (?):
+
+It will match for __zero or one occurrences__. 
