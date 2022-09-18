@@ -100,4 +100,7 @@ It is use to stablish how many times a character must appear.
 
 ###### Creating a class with counters and escaped characters:
 
-`\d{2,2}[\-\.]?` __match a set of 2 digits__ (as many as the appear in the document), and they __could or could not be followed by a "-" or "."__.
+`\d{2,2}[\-\.\ ]?` __match a set of 2 digits__, and they __could or could not be followed by a "-", "." or " "__.
+
+`\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?` Same has above but it will find 3 sets of 2 digits together.
+
