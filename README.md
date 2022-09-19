@@ -104,3 +104,9 @@ It is use to stablish how many times a character must appear.
 
 `\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?` Same has above but it will find 3 sets of 2 digits together.
 
+
+## ? As a Delimiter
+
+It will match the __set of any characters delimited by a ","__.
+
+`.+?,` "." = any character, "+" = one or more characters, "?" = delimited by a: ","
