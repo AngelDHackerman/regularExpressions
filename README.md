@@ -105,7 +105,7 @@ It is use to stablish how many times a character must appear.
 `\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?` Same has above but it will find 3 sets of 2 digits together.
 
 
-## (?) As a Delimiter
+## (?) As a Delimiter.
 
 It will match the __set of any characters delimited by a ","__.
 
@@ -123,4 +123,16 @@ It will match the __set of any characters delimited by a ","__.
 `[^0-5a-c]` It matches everything __else than the numbers 0 to 5 and a to c__.
 
 `\d\d\D?\d\d\D?` It will __match something like this : 44-55- or 44.55. or 44a55b__, etc.
+
+
+## Start (^) and End ($) of a line.
+
+`^\d$` It will find a line that __starts with a digit and ends with a digit__.
+
+`^\d{3,6}$` It matches a line that __starts with 3 digits and ends UP TO 6 digits__.
+
+`^[^\d].*$` It matches a line that __starts with something that is NOT a digit__ and ends with any other characters.
+
+`^\w+,\w+,\w+$` This match something like this: csv1,csv2,csv3 | 1234,5430,2304 | 123,432,566. It must have exactly 3 columns.
+
 
