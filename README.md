@@ -85,7 +85,7 @@ It will look for __one or more matches__.
 It will match for __zero or one occurrences__. 
 
 
-## Counters {n,n}
+## Counters {}
 
 It is use to stablish how many times a character must appear. 
 
@@ -105,8 +105,22 @@ It is use to stablish how many times a character must appear.
 `\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?\d{2,2}[\-\.\ ]?` Same has above but it will find 3 sets of 2 digits together.
 
 
-## ? As a Delimiter
+## (?) As a Delimiter
 
 It will match the __set of any characters delimited by a ","__.
 
 `.+?,` "." = any character, "+" = one or more characters, "?" = delimited by a: ","
+
+
+## NOT (^), negate a match or a class. 
+
+`\D` This match everything __else than a Digit__.
+
+`\W` This match everything __else than a Digit/Letter__.
+
+`\S` This match everything __else than a Space__.
+
+`[^0-5a-c]` It matches everything __else than the numbers 0 to 5 and a to c__.
+
+`\d\d\D?\d\d\D?` It will __match something like this : 44-55- or 44.55. or 44a55b__, etc.
+
