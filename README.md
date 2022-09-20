@@ -175,3 +175,11 @@ It will match the __set of any characters delimited by a ","__.
 
 ## Searching for emails.
 
+`[\w\._]{5,30}\+?[\w]{0,10}@[\w\.\-]{3,}\.\w{2,5}`
+
+1) It starts with a digit/word or "." or "_" from 5 up to 30 characters.
+2) migth be a "+"
+3) after the "+" a letter or digit from 0 up to 10 characters.
+4) this is separated by a "@"
+5) from 3 up to infitive letters/digits or "." or "-"
+6) followed by from 2 up to 5 "." or letters/digits.  __(this can be a regional TLD like: .gt .mx .jp)__
