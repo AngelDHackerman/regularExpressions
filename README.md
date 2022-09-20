@@ -161,3 +161,17 @@ It will match the __set of any characters delimited by a ","__.
 4) lastly they might be followed by "#" "p" or "e". ([#pe])
 5) And the some of the previous steps are repited in order to match our pattern.
 
+
+## Searching URL. 
+
+`https?:\/\/[\w\-\.]+\.\w{2,5}\/?\S*`
+
+1) https, it might have a "s" at the end or not. (https?)
+2) it has to be followed by two slashed.  (\\/\\/)
+3) the slash could be followed by __one or more__: letters, "-" or ".".  ([\w\\-\\.]+)
+4) then followed from 2 up to 5 dots, digits or letters.  (\\.\w{2,5})
+5) also it could have a "/" and a non-space at the end. (\\/?\S*)
+
+
+## Searching for emails.
+
