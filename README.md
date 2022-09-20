@@ -136,8 +136,28 @@ It will match the __set of any characters delimited by a ","__.
 `^\w+,\w+,\w+$` This match something like this: csv1,csv2,csv3 | 1234,5430,2304 | 123,432,566. It must have exactly 3 columns.
 
 
-## Searching Logs 
+## Searching Logs.
 
 `^\[LOG.*\[WARN\].*$`  With this Regex you can __find all the warnings__ in the "liners.txt" file
 
 `^[LOG.*\[LOG\].*user:celismx\] .*$`
+
+
+## Searching Phone numbers.
+
+`^\+?\d+[#pe]?\d*$`  The pattern to match will look for:
+
+1) it might start with a "+" signe.  (^\\+?)
+2) it must have one or more digits.  (\d+)
+3) digits might be followed by a: "#" "p" or "e".  ([#pe]?)
+4) and lastly bring all the digits (if there are) after all the preceeded match.  (\d*)
+
+
+`^\+?\d{2,3}[^\da-zA-Z]?\d{2,3}[^\da-zA-Z]?\d{2,3}[#pe]?\d*$`  This stands for:
+
+1) It might start with a "+" signe. (^\\+?)
+2) Look from 2 up to 3 digits together. (\d{2,3}).
+3) And those digits __migth be followed__ by something __that is not__ a digit or letters. ([^\da-zA-Z]?)
+4) lastly they might be followed by "#" "p" or "e". ([#pe])
+5) And the some of the previous steps are repited in order to match our pattern.
+
