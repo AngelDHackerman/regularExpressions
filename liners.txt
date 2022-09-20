@@ -1,0 +1,10 @@
+[LOG ENTRY] [ERROR] The system is unstable
+[LOG ENTRY] [WARN] The system may be down
+[LOG ENTRY] [WARN] Microsoft just bought Github
+[LOG DATA] [LOG] Everything is OK
+[LOG ENTRY] [LOG] [user:@beco] Logged in
+[LOG ENTRY] [LOG] [user:@beco] Clicked here
+[LOG DATA] [LOG] [user:@celismx] Did something
+[LOG ENTRY] [LOG] [user:@beco] Rated the app
+[LOG ENTRY] [LOG] [user:@beco] Logged out
+[LOG LINE] [LOG] [user:@celismx] Logged in

@@ -136,3 +136,8 @@ It will match the __set of any characters delimited by a ","__.
 `^\w+,\w+,\w+$` This match something like this: csv1,csv2,csv3 | 1234,5430,2304 | 123,432,566. It must have exactly 3 columns.
 
 
+## Searching Logs 
+
+`^\[LOG.*\[WARN\].*$`  With this Regex you can __find all the warnings__ in the "liners.txt" file
+
+`^[LOG.*\[LOG\].*user:celismx\] .*$`
