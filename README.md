@@ -192,6 +192,11 @@ It will match the __set of any characters delimited by a ","__.
 
 ## Search & Replacement
 
+Here you can use the document "movies.dat" in order to test this regular expression.
+
 `^\d+::([\w\s:,\(\)'\.\-&!\/]+)\s\((\d\d\d\d)\)::.*$`
 
 
+## GET queries. 
+
+`[\?&](\w+)=([^&\n]+)`
