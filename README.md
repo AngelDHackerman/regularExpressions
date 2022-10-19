@@ -190,3 +190,8 @@ It will match the __set of any characters delimited by a ","__.
 `^[A-Z][a-z]{3,}\s?[A-Z]?[a-z]{0,}`
 
 
+## Search & Replacement
+
+`^\d+::([\w\s:,\(\)'\.\-&!\/]+)\s\((\d\d\d\d)\)::.*$`
+
+
