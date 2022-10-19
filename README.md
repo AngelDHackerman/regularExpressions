@@ -183,3 +183,8 @@ It will match the __set of any characters delimited by a ","__.
 4) this is separated by a "@"
 5) from 3 up to infitive letters/digits or "." or "-"
 6) followed by from 2 up to 5 "." or letters/digits.  __(this can be a regional TLD like: .gt .mx .jp)__
+
+
+## Searching Names.
+
+`^[A-Z][a-z]{3,}\s?[A-Z]?[a-z]{0,}`
